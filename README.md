@@ -24,7 +24,8 @@ It calculates:
 
 ✔ First Come First Serve (FCFS)  
 ✔ Shortest Job First (SJF - Non Preemptive)  
-✔ Round Robin (Preemptive)
+✔ Round Robin (Preemptive)  
+✔ Priority Scheduling (Non-Preemptive)
 
 ---
 
@@ -34,6 +35,7 @@ It calculates:
 - Gantt Chart Visualization
 - Multi-algorithm comparison
 - Time Quantum support (Round Robin)
+- Priority Scheduling support
 - Clean console output
 - Accurate scheduling metrics
 
@@ -49,10 +51,11 @@ cpu-scheduling-simulator/
 ├── process.h
 ├── assets/
 │   ├── fcfs_output.png
-│   └── rr_output.png
+│   ├── rr_output.png
+│   └── priority_scheduling_output.png
 └── README.md
 
-```
+---
 
 ## 🖥 Sample Output
 
@@ -65,6 +68,12 @@ cpu-scheduling-simulator/
 ### 🔹 Round Robin Output (TQ = 2)
 
 ![Round Robin Output](assets/rr_output.png)
+
+---
+
+### 🔹 Priority Scheduling Output (Non-Preemptive)
+
+![Priority Scheduling](assets/priority_scheduling_output.png)
 
 ---
 
@@ -89,28 +98,33 @@ scheduler
 g++ main.cpp scheduler.cpp -o scheduler
 ./scheduler
 
+📚 Concepts Covered
 
-## 📚 Concepts Covered
+CPU Scheduling Algorithms
 
-- CPU Scheduling Algorithms
-- Preemptive vs Non-Preemptive Scheduling
-- Process Lifecycle
-- Context Switching Logic
-- OS Performance Metrics
+Preemptive vs Non-Preemptive Scheduling
 
+Priority Scheduling Logic
 
-## 🎯 Learning Outcomes
+Process Lifecycle
 
-- Understanding of CPU scheduling trade-offs
-- Implementation of preemptive & non-preemptive algorithms
-- Calculation of OS performance metrics
-- Structured modular C++ programming
+Context Switching Logic
 
-## 👨‍💻 Author
+OS Performance Metrics
+
+🎯 Learning Outcomes
+
+Understanding of CPU scheduling trade-offs
+
+Implementation of preemptive & non-preemptive algorithms
+
+Implementation of Priority Scheduling
+
+Calculation of OS performance metrics
+
+Structured modular C++ programming
+
+👨‍💻 Author
 
 Rohit Khokhar
-B.Tech CSE  
-
-```
-
-
+B.Tech CSE
